@@ -209,7 +209,11 @@ def start(bot: Bot, update: Update, args: List[str]):
                     escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats(),
-                )
+                ),
+                parse_mode=ParseMode.MARKDOWN,
+                timeout=60,
+                disable_web_page_preview=True,
+            )
      
 # for test purposes
 def error_callback(bot, update, error):
