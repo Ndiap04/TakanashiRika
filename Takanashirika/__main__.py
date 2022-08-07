@@ -68,11 +68,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 PM_START_TEXT = """
-Hello *{}*!
-────────────────────────
-📡 *Takanashi Rika:* `{}`
-────────────────────────
-Hit the /help to see available command.
+Ini adalah bot manager khusus Bottycu , kirim command digrub.
 """
 
 buttons = [
@@ -213,12 +209,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                     escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats(),
-                ),
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-                disable_web_page_preview=True,
-            )
+                )
      
 # for test purposes
 def error_callback(bot, update, error):
