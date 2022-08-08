@@ -9,7 +9,6 @@ import platform
 import sys
 import traceback
 import requests
-import Takanashirika.modules.sql.users_sql as sql
 from parsel import Selector
 from requests import get
 import json
