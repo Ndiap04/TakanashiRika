@@ -6,8 +6,6 @@ from telegram import Bot, Update, TelegramError
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 
-import Takanashirika.modules.sql.users_sql as sql
-
 from Takanashirika import dispatcher, OWNER_ID, LOGGER, DEV_USERS
 from Takanashirika.modules.helper_funcs.chat_status import sudo_plus, dev_plus
 
